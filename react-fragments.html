@@ -1,0 +1,22 @@
+<body>
+  <div id="root"></div>
+  <script src="https://unpkg.com/react@16.7.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.7.0/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const element = (
+      <React.Fragment>
+        <span>hello</span> <span>world</span>
+      </React.Fragment>
+    );
+    // const helloElement = React.createElement("span", null, "Hello");
+    // const worldElement = React.createElement("span", null, "world");
+    // const element = React.createElement(
+    //   React.Fragment,
+    //   null,
+    //   helloElement,
+    //   worldElement
+    // );
+    ReactDOM.render(element, document.getElementById("root"));
+  </script>
+</body>
